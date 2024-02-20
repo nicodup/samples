@@ -3,7 +3,7 @@
 When it comes to embedding an external video on your website, because third party video vendors will have access to the visitors personal data, it is often required to receive the visitor's consent before launching the video.
 
 
-There are many ways to achieve this with Didomi web SDK.  
+There are many ways to achieve this with the Didomi web SDK.  
 In the following example, we will describe one solution to do so, using a video from Youtube as an example and without using a CMS.
 
 
@@ -31,12 +31,12 @@ In order to respect user privacy, you have to block the moment the video is load
 
 You need to make sure the video vendor is actually declared in your consent notice.
 
-Let's start !
+Let's start!
 
 
 ## Step 1 : Blocking the video source
 
-In your `html` file, a Youtube embedded video should looks like this :
+In your `html` file, a Youtube embedded video should looks like this:
 ```html
 <html>
   <head>
@@ -79,7 +79,7 @@ The `src` must be replaced with a `data-src` attribute:
 
 The following steps will require to add an overlay with an "I agree" button to allow the visitor to give his consent.
 
-It's more convenient to add a html parent tag to encompass all the new elements we have to add.
+It's more convenient to add an html parent tag to encompass all the new elements we have to add.
 
 
 ```html
@@ -101,7 +101,7 @@ It's more convenient to add a html parent tag to encompass all the new elements 
 ```
 
 Inside our parent tag, we also add a text message with a button element:
-note: As it needs to comply with the regulation, your custom text must to be validated by your legal department.
+note: As it needs to comply with the regulation, your custom text must be validated by your legal department.
 
 
 ```html
@@ -134,7 +134,7 @@ note: As it needs to comply with the regulation, your custom text must to be val
 ## Step 3: Setting up the overlay (CSS)
 
 Now we have to arrange the layout so the video overlay (`video-consent-overlay`) appears above the video.  
-We also have to add style to make our text & button a bit more fancies.
+We also have to add style to make our text & button a bit more fancy.
 There are a lot of differents ways to do so, here is one suggestion:
 
 ```css
